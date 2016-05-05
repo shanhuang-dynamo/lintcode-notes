@@ -5,7 +5,7 @@
 
 ---
 
-```
+```java
 class Solution {
     /**
      * Returns a index to the first occurrence of target in source,
