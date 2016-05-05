@@ -6,7 +6,7 @@
 ---
 ###Notes:
 - Iterative algorithm for Power set:
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=PS(A%5Ccup%20%5C%7Be%5C%7D)%3D%20PS(A)%5Ccup%5C%7B%5C%7Be%5C%7D%5Ccup%20B%7C%5Cforall%20B%5Cin%20PS(A)%5C%7D" style="border:none;" />
+![iterative algorithm](http://latex.codecogs.com/gif.latex?PS(A\cup&space;\{e\})=&space;PS(A)\cup\{\{e\}\cup&space;B|\forall&space;B\in&space;PS(A)\})
 - recursive algorithm for Poswer Set:
 TODO
 ###Code:
