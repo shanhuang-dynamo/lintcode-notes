@@ -14,11 +14,11 @@ class Solution {
      * @param target string containing the sequence of characters to match.
      */
     public int strStr(String source, String target) {
-        //write your code here
         if(source == null || target == null || target.length()>source.length()) 
             return -1;
         for(int i=0;i<source.length()-target.length()+1;i++){
             // substring(beg_ind, end_ind), includes beg_ind, excludes end_ind
+            // [substring](http://www.tutorialspoint.com/java/java_string_substring.htm)
             String substr = source.substring(i,i+target.length());
             if(!substr.equals(target))
                 continue;
