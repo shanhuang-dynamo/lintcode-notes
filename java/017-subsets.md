@@ -6,7 +6,7 @@
 ---
 ###Notes:
 - Iterative algorithm for Power set:
-<img src="http://chart.googleapis.com/chart?cht=tx&chl= PS(A\cup \{e\})= PS(A) \cup \{e\cup A'| \forall A'\in PS(A)\}" style="border:none;">
+<img src="http://www.forkosh.com/mathtex.cgi? PS(A\cup \{e\})= PS(A) \cup \{e\cup A'| \forall A'\in PS(A)\}">
 - recursive algorithm for Poswer Set:
 TODO
 ###Code:
