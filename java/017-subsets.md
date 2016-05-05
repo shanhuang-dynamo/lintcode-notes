@@ -6,16 +6,11 @@
 ---
 ###Notes:
 - Iterative algorithm for Power set:
-$$latex
-PS(e\cup A)=\{e\cup A'| \forall A'\in PS(A)\}\cup PS(A)
-$$
+<img src="http://chart.googleapis.com/chart?cht=tx&chl= PS(A\cup \{e\})= PS(A) \cup \{e\cup A'| \forall A'\in PS(A)\}" style="border:none;">
 - recursive algorithm for Poswer Set:
 TODO
 ###Code:
 #### Iterative algorithm for Power set:
-$$latex
-PS(e\cup A)=\{e\cup A'| \forall A'\in PS(A)\}\cup PS(A)
-$$
 ```java
 class Solution {
     /**
@@ -49,8 +44,8 @@ class Solution {
     }
 }
 ```
-####recursive algorithm for Poswer Set:
-TODO
+####recursive algorithm for Poswer Set: TODO
+
 ---
 
 - [prev: 016. Permutations II](016-permutations-ii.md)
