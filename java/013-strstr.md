@@ -4,7 +4,9 @@
 - [next: 014. First Position of Target](014-first-position-of-target.md)
 
 ---
-
+###Note:
+[substring](http://www.tutorialspoint.com/java/java_string_substring.htm)
+###Solution:
 ```java
 class Solution {
     /**
@@ -18,7 +20,6 @@ class Solution {
             return -1;
         for(int i=0;i<source.length()-target.length()+1;i++){
             // substring(beg_ind, end_ind), includes beg_ind, excludes end_ind
-            // [substring](http://www.tutorialspoint.com/java/java_string_substring.htm)
             String substr = source.substring(i,i+target.length());
             if(!substr.equals(target))
                 continue;
