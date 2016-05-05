@@ -4,10 +4,53 @@
 - [next: 018. Subsets II](018-subsets-ii.md)
 
 ---
-
-put your own notes and solutions here.
-you can add any reference link such as [title](reference url) here.
-
+###Notes:
+- Iterative algorithm for Power set:
+$$latex
+PS(e\cup A)=\{e\cup A'| \forall A'\in PS(A)\}\cup PS(A)
+$$
+- recursive algorithm for Poswer Set:
+TODO
+###Code:
+#### Iterative algorithm for Power set:
+$$latex
+PS(e\cup A)=\{e\cup A'| \forall A'\in PS(A)\}\cup PS(A)
+$$
+```java
+class Solution {
+    /**
+     * @param S: A set of numbers.
+     * @return: A list of lists. All valid subsets.
+     */
+    public ArrayList<ArrayList<Integer>> subsets(int[] nums) {
+        //First sort the array nums in descending order (using bubble sort)
+        for(int i=0;i<nums.length-1;i++){
+            for(int j=0;j<nums.length-1-i;j++){
+                if(nums[j]<nums[j+1]){
+                    int temp=nums[j];
+                    nums[j]=nums[j+1];
+                    nums[j+1]=temp;
+                }
+            }
+        }
+        ArrayList<ArrayList<Integer>> allSet = new ArrayList<ArrayList<Integer>>();
+        allSet.add(new ArrayList<Integer>());
+        for (int i = 0; i < nums.length; i++) {
+            ArrayList<ArrayList<Integer>> subSet = new ArrayList<ArrayList<Integer>>();
+            for (int j = 0; j < allSet.size(); j++) {
+                ArrayList<Integer> element = new ArrayList<Integer>();
+                element.add(nums[i]);
+                element.addAll(allSet.get(j));
+                subSet.add(element);
+            }
+            allSet.addAll(subSet);
+        }
+        return allSet;
+    }
+}
+```
+####recursive algorithm for Poswer Set:
+TODO
 ---
 
 - [prev: 016. Permutations II](016-permutations-ii.md)
