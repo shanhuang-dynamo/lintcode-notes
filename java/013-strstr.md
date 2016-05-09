@@ -5,6 +5,7 @@
 
 ---
 ###Note:
+substring not used since it requires more additional space.
 [substring](http://www.tutorialspoint.com/java/java_string_substring.htm)
 ###Solution:
 ```java
