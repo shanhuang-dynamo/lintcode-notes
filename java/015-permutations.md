@@ -5,7 +5,7 @@
 
 ---
 ### Notes
-did not pass the corner test of null input
+did not pass the corner test of null or [] input
 
 ### code
 

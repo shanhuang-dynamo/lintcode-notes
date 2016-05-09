@@ -19,6 +19,7 @@ class Solution {
     public int strStr(String source, String target) {
         if(source == null || target == null || target.length()>source.length()) 
             return -1;
+        if(target == "") return 0; //corner case that target is empty
         for(int i=0;i<source.length()-target.length()+1;i++){
             for(int j=0;j<target.length();j++){
                 if(target.charAt(j)!=source.charAt(i+j))
