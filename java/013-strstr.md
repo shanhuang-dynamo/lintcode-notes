@@ -19,12 +19,14 @@ class Solution {
         if(source == null || target == null || target.length()>source.length()) 
             return -1;
         for(int i=0;i<source.length()-target.length()+1;i++){
-            // substring(beg_ind, end_ind), includes beg_ind, excludes end_ind
-            String substr = source.substring(i,i+target.length());
-            if(!substr.equals(target))
-                continue;
-            else
-                return i;
+            for(int j=0;j<target.length();j++){
+                if(target.charAt(j)!=source.charAt(i+j))
+                    break;
+                else{
+                    if(j==target.length()-1) return i;
+                    continue;
+                }
+            }
         }
         return -1;
     }
